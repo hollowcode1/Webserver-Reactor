@@ -1,0 +1,4 @@
+/home/book/sserver/mymuduo/build/CMakeFiles/edit_cache.dir
+/home/book/sserver/mymuduo/build/CMakeFiles/mymuduo.dir
+/home/book/sserver/mymuduo/build/CMakeFiles/rebuild_cache.dir
+/home/book/sserver/mymuduo/build/CMakeFiles/server.dir
