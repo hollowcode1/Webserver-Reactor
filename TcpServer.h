@@ -52,7 +52,7 @@ private:
 
     using ConnectionMap = std::unordered_map<std::string, TcpConnectionPtr>;
 
-    EventLoop *loop_; // baseLoop 用户定义的loop
+    EventLoop *loop_; // baseLoop 
 
     const std::string ipPort_;
     const std::string name_;

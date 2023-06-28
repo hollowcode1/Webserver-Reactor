@@ -25,10 +25,7 @@ void Channel::tie(const std::shared_ptr<void> &obj)
     tied_ = true;
 }
 
-/**
- * 当改变channel所表示fd的events事件后，update负责在poller里面更改fd相应的事件epoll_ctl
- * EventLoop => ChannelList   Poller
- */ 
+
 void Channel::update()
 {
     // 通过channel所属的EventLoop，调用poller的相应方法，注册fd的events事件

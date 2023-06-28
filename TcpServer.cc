@@ -28,7 +28,7 @@ TcpServer::TcpServer(EventLoop *loop,
                 , nextConnId_(1)
                 , started_(0)
 {
-    // 当有先用户连接时，会执行TcpServer::newConnection回调
+   
     acceptor_->setNewConnectionCallback(std::bind(&TcpServer::newConnection, this, 
         std::placeholders::_1, std::placeholders::_2));
 }

@@ -50,7 +50,7 @@ private:
 
     using ChannelList = std::vector<Channel*>;
 
-    std::atomic_bool looping_;  // 原子操作，通过CAS实现的
+    std::atomic_bool looping_;  // 原子操作
     std::atomic_bool quit_; // 标识退出loop循环
     
     const pid_t threadId_; // 记录当前loop所在线程的id

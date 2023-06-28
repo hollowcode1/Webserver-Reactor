@@ -90,13 +90,7 @@ void EventLoop::loop()
 }
 
 // 退出事件循环  1.loop在自己的线程中调用quit  2.在非loop的线程中，调用loop的quit
-/**
- *              mainLoop
- * 
- *                                             no ==================== 生产者-消费者的线程安全的队列
- * 
- *  subLoop1     subLoop2     subLoop3
- */ 
+
 void EventLoop::quit()
 {
     quit_ = true;

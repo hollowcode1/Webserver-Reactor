@@ -11,10 +11,7 @@
 class HttpRequest;
 class HttpResponse;
 
-/// A simple embeddable HTTP server designed for report status of a program.
-/// It is not a fully HTTP 1.1 compliant server, but provides minimum features
-/// that can communicate with HttpClient and Web browser.
-/// It is synchronous, just like Java Servlet.
+
 class HttpServer : noncopyable
 {
  public:
@@ -28,7 +25,7 @@ class HttpServer : noncopyable
 
   EventLoop* getLoop() const { return server_.getLoop(); }
 
-  /// Not thread safe, callback be registered before calling start().
+ 
   void setHttpCallback(const HttpCallback& cb)
   {
     httpCallback_ = cb;
@@ -54,4 +51,4 @@ class HttpServer : noncopyable
 
 
 
-#endif  // MUDUO_NET_HTTP_HTTPSERVER_H
+#endif  

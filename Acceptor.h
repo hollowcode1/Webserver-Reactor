@@ -25,7 +25,7 @@ public:
 private:
     void handleRead();
     
-    EventLoop *loop_; // Acceptor用的就是用户定义的那个baseLoop，也称作mainLoop
+    EventLoop *loop_; // Acceptor用的就是用户定义的那个baseLoop
     Socket acceptSocket_;
     Channel acceptChannel_;
     NewConnectionCallback newConnectionCallback_;

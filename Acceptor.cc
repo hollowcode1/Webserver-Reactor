@@ -44,7 +44,7 @@ void Acceptor::listen()
     acceptChannel_.enableReading(); // acceptChannel_ => Poller
 }
 
-// listenfd有事件发生了，就是有新用户连接了
+//有新用户连接了
 void Acceptor::handleRead()
 {
     InetAddress peerAddr;

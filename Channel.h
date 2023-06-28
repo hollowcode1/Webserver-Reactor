@@ -8,11 +8,7 @@
 
 class EventLoop;
 
-/**
- * 理清楚  EventLoop、Channel、Poller之间的关系   《= Reactor模型上对应 Demultiplex
- * Channel 理解为通道，封装了sockfd和其感兴趣的event，如EPOLLIN、EPOLLOUT事件
- * 还绑定了poller返回的具体事件
- */ 
+
 class Channel : noncopyable
 {
 public:

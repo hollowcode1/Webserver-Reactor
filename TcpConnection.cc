@@ -213,7 +213,7 @@ void TcpConnection::connectDestroyed()
     if (state_ == kConnected)
     {
         setState(kDisconnected);
-        channel_->disableAll(); // 把channel的所有感兴趣的事件，从poller中del掉
+        channel_->disableAll(); // 把channel的所有活跃的事件，从poller中del掉
         connectionCallback_(shared_from_this());
     }
     channel_->remove(); // 把channel从poller中删除掉
