@@ -14,11 +14,12 @@
 
 *短链接：*
 
-![image-20230628135514203](C:\Users\袁泉\AppData\Roaming\Typora\typora-user-images\image-20230628135514203.png)
+![image](https://github.com/hollowcode1/Webserver-Reactor/assets/122421971/9207dace-253a-47fa-ae8e-2011b1903bdb)
+
 
 *长连接：*
 
-![image-20230628135553991](C:\Users\袁泉\AppData\Roaming\Typora\typora-user-images\image-20230628135553991.png)
+![image](https://github.com/hollowcode1/Webserver-Reactor/assets/122421971/bb33497c-565c-4383-b806-1e5c81dbf0a6)
 
 ***实现描述：***
 
